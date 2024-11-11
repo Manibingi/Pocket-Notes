@@ -1,0 +1,213 @@
+.page {
+  display: flex;
+  height: 100vh;
+}
+/* Left Container */
+.left {
+  width: 30vw;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 28vw;
+  height: 100vh;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.list {
+  overflow: auto;
+  height: 78vh;
+  overflow-wrap: anywhere;
+  font-size: 1.5rem;
+}
+
+li {
+  height: 10vh;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.list span {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  background: #2f2f2f2b;
+  height: 10vh;
+  border-radius: 5px;
+}
+
+.list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: #d9d9d9;
+  border-radius: 20px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.add {
+  position: sticky;
+  bottom: 40px;
+  margin-right: 35px;
+  display: flex;
+  justify-content: end;
+}
+
+.addBtn {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  font-size: 3rem;
+  color: #ffffff;
+  background-color: #16008b;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.addBtn:hover {
+  transform: scale(1.2);
+}
+
+.icon {
+  background-color: red;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+/* Right Container */
+.right {
+  background-color: #dae5f5;
+  width: 70vw;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+  gap: 60px;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 4vw;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.key {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  top: 7vh;
+}
+
+.lockIcon {
+  position: relative;
+  left: 0vw;
+}
+
+.end {
+  position: relative;
+  top: 18vh;
+}
+
+.display {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  .list {
+    font-size: 1.3rem;
+  }
+
+  li {
+    margin-left: 35px;
+    gap: 30px;
+  }
+
+  .key {
+    top: 3vh;
+  }
+
+  .addBtn {
+    height: 50px;
+    width: 50px;
+    font-size: 3rem;
+  }
+
+  .add {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .left {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .list {
+    font-size: 1.5rem;
+    width: 100vw;
+  }
+
+  li {
+    margin-left: 55px;
+    gap: 30px;
+  }
+}

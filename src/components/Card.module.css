@@ -1,0 +1,33 @@
+.card {
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 5px;
+  line-height: 2rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  overflow-wrap: anywhere;
+  font-size: 1.2rem;
+  font-family: Roboto;
+}
+
+.dateInfo {
+  margin-top: 4vh;
+  font-size: 0.8rem;
+  float: right;
+  font-weight: 500;
+  display: flex;
+  gap: 10px;
+  font-style: Roboto;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    padding: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 35px;
+  }
+}

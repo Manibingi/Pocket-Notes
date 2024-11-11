@@ -1,0 +1,117 @@
+.heading {
+  border: 1px solid #001f8b;
+  height: 80px;
+  width: 72vw;
+  background-color: #001f8b;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.circle {
+  border-radius: 50%;
+  padding: 15px;
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.cardSection {
+  height: 62vh;
+  overflow: auto;
+  background-color: #dae5f5;
+}
+
+.cardSection::-webkit-scrollbar {
+  width: 10px;
+}
+
+.cardSection::-webkit-scrollbar-track {
+  background: #d9d9d9;
+  border-radius: 20px;
+}
+
+.cardSection::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.footer {
+  background-color: #001f8b;
+  position: fixed;
+  top: 73vh;
+  width: 72vw;
+  height: 27vh;
+  display: flex;
+}
+
+textarea {
+  height: 20vh;
+  width: 90vw;
+  margin: 28px 30px;
+  font-size: 1.4rem;
+  border-radius: 9px;
+  padding: 20px;
+  outline: none;
+}
+
+img {
+  position: relative;
+  top: 18vh;
+  right: 5vw;
+  cursor: pointer;
+}
+
+button {
+  font-size: 1.4rem;
+  margin-left: 15px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    width: 100%;
+    justify-content: start;
+    gap: 10px;
+  }
+
+  .circle {
+    margin-left: 50px;
+  }
+
+  .footer {
+    width: 100vw;
+  }
+
+  img {
+    right: 15vw;
+    width: 20px;
+    height: 20px;
+  }
+
+  textarea {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+}
